@@ -3,11 +3,11 @@ import os
 from python_aternos import Client
 import time
 
-TOKEN = 'paste-your-token-here'
+TOKEN = 'MTQ3NjgzMzAxMDk5MjI4Nzc4NQ.GxUUOR.2f1x-5tvY6W9ZDW-QNRxviNc_6gMC98wHQUiLM'
 
 client = discord.Client()
 
-aternos = Client('your-aternos-username', password='your-aternos-password')
+aternos = Client('Anime_Ace1', password='ayushman1508')
 
 atservers = aternos.servers
 
@@ -37,12 +37,12 @@ async def on_message(message):
         if user_message.lower() == '?server_start':
           myserv.start()
           while True:
-            ping = str(os.popen('mcstatus yourservername.aternos.me status | grep description').read())
+            ping = str(os.popen('mcstatus RedstoneSMPgg.aternos.me status | grep description').read())
             if "offline" in ping:
               time.sleep(1)
             else:
               break
-          await message.channel.send("server is now alive!!! you can join in 2-3 minutes by pasting ||yourservername.aternos.me:serverport|| in the server address.")
+          await message.channel.send("server is now alive!!! you can join in 2-3 minutes by pasting ||RedstoneSMPgg.aternos.me:32345|| in the server address.")
           return
 
     if message.channel.name == 'bot-cmnds':
